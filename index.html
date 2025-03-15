@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome to Madewell | Emily Mena, 2025</title>
+<style type="text/css">
+	
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #EAEAEA;
+}
+
+.wrapper {
+    display: block;
+    background-color: rgba(255,255,255,1.00);
+    width: 100%;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(255,255,255,1.00);
+}
+
+.logo img {
+    height: 40px;
+    position: relative;
+    left: 65px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    position: relative;
+    left: 30px;
+}
+
+nav ul li {
+    font-family: "Avenir Heavy";
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: rgba(122,122,122,1.00);
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-icons img {
+    height: 24px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 0;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1366px;
+    gap: 40px;
+}
+
+.clothingtext {
+    max-width: 400px;
+    text-align: left;
+    position: relative;
+    padding-top: 74px;
+    padding-right: 145px;
+    padding-bottom: 145px;
+    padding-left: 145px;
+}
+
+.intro-text {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+    font-family: "Avenir Light";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 24px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Avenir Light";
+}
+
+.price {
+    font-size: 20px;
+    color: #333;
+    font-family: "Avenir Heavy";
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+p strong {
+    position: relative;
+    font-family: "Avenir Heavy";
+}
+
+.colorname {
+    font-family: "Avenir Light";
+    position: relative;
+    top: 9px;
+}
+
+.color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    position: relative;
+    top: 17px;
+}
+
+.sizetitle {
+    font-family: "Avenir Heavy";
+    color: rgba(0,0,0,1.00);
+    position: relative;
+    top: 25px;
+}
+
+#sizeselect {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    position: relative;
+    top: 26px;
+}
+
+.add-to-bag {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    top: 56px;
+}
+
+.add-to-bag:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #000000;
+    font-family: "Avenir Heavy";
+}
+
+.product-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    max-width: 600px;
+    margin-right: 47px;
+}
+.choco1 {
+    position: relative;
+    left: 236px;
+    bottom: 37px;
+}
+.dusty2 {
+    position: relative;
+    bottom: 38px;
+    left: 35px;
+}
+.ivory3 {
+    bottom: 40px;
+    position: relative;
+    right: 157px;
+}
+	
+.product-images .pair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+	
+.product-images img {
+    max-width: 158%;   /* Make images flexible to container size */
+    max-height: 410px; /* Set a max height for the images */
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+    opacity: 0; /* Initially hide the images */
+    transition: opacity 0.3s ease;
+}
+
+
+.product-images img.visible {
+    opacity: 1;
+}
+
+</style>
+</head>
+<body>
+	
+<wrapper>
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <img src="madelogo.png" alt="Madewell Logo">
+      </div>
+      <ul>
+        <li>NEW</li>
+        <li>WOMEN</li>
+        <li>MEN</li>
+        <li>SALE</li>
+      </ul>
+      <div class="nav-icons">
+        <img src="searchlogo.png" alt="Search"> 
+        <img src="profilelogo.png" alt="Profile"> 
+        <img src="bag.webp" alt="Cart">
+      </div>
+    </div>
+  </nav>
+</wrapper>
+
+<main>
+  <div class="product-container">
+<div class="product-images">
+    <div class="choco1">
+        <img id="img1" class="top visible" src="sweater1.webp" alt="sweater1">
+        <img id="img2" class="bottom visible" src="sweater4.webp" alt="sweater11">
+    </div>
+    <div class="dusty2">
+        <img id="img3" class="top" src="sweater11.webp" alt="sweater4">
+        <img id="img4" class="bottom" src="sweater14.webp" alt="sweater14">
+    </div>
+    <div class="ivory3">
+        <img id="img5" class="top" src="sweater111.webp" alt="sweater14">
+        <img id="img6" class="bottom" src="sweater114.webp" alt="sweater14">
+    </div>
+</div>
+
+
+    <div class="clothingtext">
+      <p class="intro-text">
+        Mens / Clothing / Sweaters / <span style="color: black;">Crewnecks</span>
+      </p>
+      <h1 id="product-title">Waffle-Knit Crewneck Sweater</h1>
+      <p class="price">$118.00</p>
+      <p class="colorname"><strong>Color:</strong> <span id="color-name">Chocolate Raisin</span></p>
+      <div class="color-options">
+        <span class="color-circle" style="background-color: #3b1e1a;" onclick="changeColor('chocolate-raisin')"></span>
+        <span class="color-circle" style="background-color: #b0b098;" onclick="changeColor('color2')"></span>
+        <span class="color-circle" style="background-color: #eee8da;" onclick="changeColor('color3')"></span>
+      </div>
+      <label for="size" class="sizetitle">SIZE</label>
+      <select id="sizeselect">
+        <option>Select a Size</option>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+		<option>X-Large</option>
+      </select>
+      <button class="add-to-bag">Add to Bag</button>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025, Emily Mena. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+</footer>
+
+<script>
+  function changeColor(color) {
+    var topImage = document.querySelectorAll('.product-images .top');
+    var bottomImage = document.querySelectorAll('.product-images .bottom');
+    var productTitle = document.getElementById('product-title');
+    var colorName = document.getElementById('color-name');
+
+    topImage.forEach(img => img.classList.remove('visible'));
+    bottomImage.forEach(img => img.classList.remove('visible'));
+
+    if (color === 'chocolate-raisin') {
+      document.getElementById('img1').classList.add('visible');
+      document.getElementById('img2').classList.add('visible');
+      colorName.textContent = "Chocolate Raisin";
+    } else if (color === 'color2') {
+      document.getElementById('img3').classList.add('visible');
+      document.getElementById('img4').classList.add('visible');
+      colorName.textContent = "Dusty Celadon";
+    } else if (color === 'color3') {
+      document.getElementById('img5').classList.add('visible');
+      document.getElementById('img6').classList.add('visible');
+      colorName.textContent = "Vintage Ivory";
+    }
+  }
+</script>
+
+</body>
+</html>
